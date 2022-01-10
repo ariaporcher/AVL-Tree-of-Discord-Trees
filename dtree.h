@@ -1,9 +1,3 @@
-/**
- * CMSC 341 - Spring 2021
- * Project 2 - Binary Trees
- * DiscriminatorTree.h
- * An interface for the DTree class.
- */
 
 #pragma once
 
