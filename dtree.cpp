@@ -1,10 +1,3 @@
-/**
- * CMSC 341 - Spring 2021
- * Project 2 - Binary Trees
- * DiscriminatorTree.cpp
- * Implementation for the DTree class.
-**/
-
 #include "dtree.h"
 
 /**
@@ -374,50 +367,10 @@ void DTree::fillArr(DNode**& tempArr, DNode*& node, int count, int &index){
   }
 }
 
-/*
-void DTree::fillArr(DNode**& tempArr, DNode*& node, int count, int &index){
-  if(node != nullptr){
-    cout << "count and index " << count << " " << index << endl;
-    fillArr(tempArr, node->_left, count, index);
-    }
-    if(!node->isVacant()){
-      fillCell(tempArr, node, index);
-      index++;
-    }
-    fillArr(tempArr, node->_right, count, index);
-    if(node->isVacant()){
-      delete node;
-      //index++;
-    }
-}
-*/
 
 void DTree::fillCell(DNode **&tempArr, DNode*& node, int index){
   tempArr[index] = node;
 }
-
-/*
-void DTree::fillTree(DNode **&tempArr, DNode*& node, int start, int end){
-  if(start == end){
-    //node = nullptr;
-    return;
-  }else if(end - start == 1){
-    node = tempArr[start];
-    return;
-  }else{
-    node = tempArr[abs(((end - start)-1)/2)];
-    cout << "setting node equal to " << tempArr[abs(((end - start)-1)/2)]->_account._disc
-	 << " " << start << " " << end << endl;
-    fillTree(tempArr, node->_left, start, abs(((end-start)-1)/2));
-    cout << "Node: " << node->_account._disc << " " << start << " " << end << endl;
-    //    if (node->_right != nullptr){
-    fillTree(tempArr, node->_right, (end-start)/2 + 1, start);
-    //fillTree(tempArr, node->_right, start, start++);
-     //}
-  }
-}
-
-*/
 
 void DTree::fillTree(DNode **&tempArr, DNode*& node, int &index, int size){
   if(size == 1){
