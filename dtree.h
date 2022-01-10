@@ -137,12 +137,7 @@ public:
     void updateSize(DNode* node);
     void updateNumVacant(DNode* node);
     bool checkImbalance(DNode* node);
-    //----------------
     void rebalance(DNode*& node);
-    // -- OR --
-    //DNode* rebalance(DNode* node);
-    //----------------
-
     void printRoot(DTree& node);
   
 private:
@@ -163,6 +158,5 @@ private:
   void helpCheckBalance(DNode*& node);
   void fillTree(DNode**& tempArr, DNode*& node, int &index, int size);
   void fillCell(DNode**& tempArr, DNode*& node, int index);
-  bool fillInnerNodes(DNode**& tempArr, DNode*& node, int &index, int size);
-  // void helpUpdateNumVacant(DNode* node);  
+  bool fillInnerNodes(DNode**& tempArr, DNode*& node, int &index, int size);  
 };
