@@ -1,10 +1,3 @@
-/**
- * CMSC 341 - Spring 2021
- * Project 2 - Binary Trees
- * UserTree.h
- * An interface for the UTree class.
- */
-
 #pragma once
 
 #include "dtree.h"
@@ -44,8 +37,6 @@ private:
     UNode* _left;
     UNode* _right;
 
-    /* IMPLEMENT (optional): Additional helper functions */
-
 };
 
 class UTree {
@@ -55,10 +46,10 @@ class UTree {
 public:
     UTree():_root(nullptr){}
 
-    /* IMPLEMENT: destructor */
+    /* destructor */
     ~UTree();
 
-    /* IMPLEMENT: Basic operations */
+    /* Basic operations */
 
     void loadData(string infile, bool append = true);
     bool insert(Account newAcct);
@@ -72,20 +63,14 @@ public:
     void dump(UNode* node) const;
 
 
-    /* IMPLEMENT: "Helper" functions */
+    /*"Helper" functions */
     
     void updateHeight(UNode* node);
     int checkImbalance(UNode* node);
-    //----------------
     void rebalance(UNode*& node);
-    // -- OR --
-    //UNode* rebalance(UNode* node);
-    //----------------
 
 private:
   UNode* _root;
-
-    /* IMPLEMENT (optional): any additional helper functions here! */
   void clearTree(UNode* node);
   UNode* leftRotation(UNode* node);
   UNode* rightRotation(UNode* node);
