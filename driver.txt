@@ -1,0 +1,8 @@
+Testing DTree insertion...test passed
+Resulting DTree:
+((((207:1:0)251:5:0(883:3:0((1503:1:0)1691:2:0)))1980:10:0((2247:1:0)2636:4:0(2655:2:0(2987:1:0))))4430:20:0(((4945:1:0)4985:4:0(5833:2:0(6336:1:0)))7092:9:0((7488:1:0)7605:4:0(7713:2:0(8319:1:0)))))
+
+
+Testing UTree insertion...test passed
+Resulting UTree:
+(((Allegator:0:16)Aqua5Seemly:1:22(Brackle:0:41))Capstan:3:18((Cinnamon:1:48(Kippage:0:22))Pika:2:25(Sulkyreal:0:8)))
