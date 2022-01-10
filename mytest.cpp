@@ -85,9 +85,6 @@ int main() {
     cout << "\tResulting ATree..." << endl; //should be the same as dtree, prev dump
     atree.dump();
 
-    //cout << "\n\n\tResulting Accounts in ATree:";
-    //atree.printAccounts();
-
     //Test that a deep copy was made (addresses should be different)
     cout << "\n\n\tTesting that addresses of DTree and ATree are different:" << endl;
     atree.printRoot(atree);
@@ -175,7 +172,6 @@ int main() {
     utree.dump();
     cout << endl;
 
-    //
     cout << "\tResulting UTree printed Accounts..." << endl;
     utree.printUsers();
     
@@ -225,9 +221,7 @@ int main() {
     int remove = vtree.removeUser("Cali", 11, removed);
     remove = vtree.removeUser("Cali", 2, removed);
     cout << "dumping vtree" << endl;
-    //vtree.printUsers();
     vtree.dump();
-    //cout << "dumped" << endl;
           
     return 0;
 }
