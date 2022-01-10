@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include <iostream>
@@ -106,7 +105,6 @@ private:
     DNode* _left;
     DNode* _right;
 
-    /* IMPLEMENT (optional): any other helper functions */
 };
 
 class DTree {
@@ -116,11 +114,11 @@ class DTree {
 public:
     DTree(): _root(nullptr) {}
 
-    /* IMPLEMENT: destructor and assignment operator*/
+    /* destructor and assignment operator */
     ~DTree();
     DTree& operator=(const DTree& rhs);
 
-    /* IMPLEMENT: Basic operations */
+    /* Basic operations */
 
     bool insert(Account newAcct);
     bool remove(int disc, DNode*& removed);
@@ -130,7 +128,7 @@ public:
     void dump() const {dump(_root);}
     void dump(DNode* node) const;
 
-    /* IMPLEMENT: "Helper" functions */
+    /* "Helper" functions */
     
     int getNumUsers() const;
     string getUsername() const {return _root->getUsername();}
@@ -142,8 +140,6 @@ public:
   
 private:
   DNode* _root;
-
-    /* IMPLEMENT (optional): any additional helper functions here */
   void clearTree(DNode* node);
   bool insert(Account newAcct, DNode*& node);
   DNode* retrieve(int disc, DNode* node);
