@@ -1,9 +1,3 @@
-/**
- * CMSC 341 - Spring 2021
- * Project 2 - Binary Trees
- * UserTree.h
- * Implementation for the UTree class.
- */
 
 #include "utree.h"
 
@@ -374,12 +368,3 @@ UNode* UTree::rightRotation(UNode* node){
   return y;
 }
 
-/**
- * Begins and manages the rebalance procedure for an AVL tree (returns a pointer).
- * @param node UNode object where an imbalance occurred
- * @return UNode object replacing the unbalanced node's position in the tree
- */
-//UTree* UTree::rebalance(UNode* node) {
-
-//}
-//----------------
