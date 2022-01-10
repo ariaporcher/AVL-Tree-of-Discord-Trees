@@ -1,1 +1,1 @@
-# AVL-Tree-of-Discord-Trees
+# AVLTreeOfDiscordTrees
